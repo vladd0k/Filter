@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+    <div class="sort-container">
+        <div class="column">
+            <label for="nameFilter">Name filter:</label>
+            <input type="search" id="nameFilter" name="nameFilter">
+        </div>
+        <div class="column">
+            <label for="ageRange">Age filter:</label>
+            <input type="range" id="ageRange" name="ageRange" min="10" max="90" step="1" value="50">
+        </div>
+        <div class="column">
+            <fieldset>
+                <legend>Gender</legend>
+                <div>
+                    <input type="radio" id="all" class="gender-radio" name="gender" value="all" checked>
+                    <label for="all">All</label>
+                </div>
+                <div>
+                    <input type="radio" id="male" class="gender-radio" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" class="gender-radio" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="user-container">
+
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
